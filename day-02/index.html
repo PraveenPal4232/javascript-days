@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Days</title>
+    <link rel="stylesheet" href="../css/comman.css">
+
+</head>
+<body>
+    <main>
+    <h1>Javascript Days: Day 02</h1>
+    <h2>Conditional statements</h2>
+    <h3>if...else statement</h3>
+    <code>
+        if (condition) {<br>
+            statement_1;<br>
+          } else {<br>
+            statement_2;<br>
+          }
+    </code>
+
+    <h3>else if statement</h3>
+    <code>
+        if (condition_1) {<br>
+            statement_1;<br>
+          } else if (condition_2) {<br>
+            statement_2;<br>
+          } else if (condition_n) {<br>
+            statement_n;<br>
+          } else {<br>
+            statement_last;<br>
+          } 
+    </code>
+
+    <h3>switch statement</h3>
+    <code>
+        switch (expression) {<br>
+            case label_1:<br>
+              statements_1<br>
+              [break;]<br>
+            case label_2:<br>
+              statements_2<br>
+              [break;]<br>
+              …<br>
+            default:<br>
+              statements_def<br>
+              [break;]<br>
+          }
+    </code>
+
+    <h3>Falsy values</h3>
+    <ol>
+        <li>false</li>
+        <li>undefined</li>
+        <li>null</li>
+        <li>0</li>
+        <li>NaN</li>
+        <li>the empty string ("")</li>
+    </ol>
+
+    <h2>Exception types</h2>
+    <ol>
+        <li>try : statement lets you test a block of code for errors.</li>
+        <li>catch : statement lets you handle the error.</li>
+        <li>throw : statement lets you create custom errors.</li>
+        <li>finally : statement lets you execute code, after try and catch, regardless of the result.</li>
+    </ol>
+
+    <script>
+
+        var x = Number(prompt("What Is your Lucky Number"));
+        var y = (prompt("Enter a Number"));
+
+        switch(x){
+            case 0 :
+            console.log("zero");
+            break;
+            case 1 :
+            console.log("one");
+            break;
+            default:
+            console.log("I don't Know");
+            break;
+        }
+
+    function myFunction() {
+    try {
+    if(y == "") throw "is Empty";
+    if(isNaN(y)) throw "not a number";
+    if(y > 10) throw "too high";
+    if(y < 5) throw "too low";
+    }
+    catch(err) {
+        console.log("Input " + err);
+        }
+    }
+
+    myFunction();
+    
+    </script>
+
+    </main>
+</body>
+</html>

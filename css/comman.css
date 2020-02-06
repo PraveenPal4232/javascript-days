@@ -1,0 +1,30 @@
+*{
+margin: 0px;
+box-sizing: border-box;
+}
+body{
+background-color: black;
+color: greenyellow;
+font-family: monospace;
+border-top: 5px solid greenyellow;
+border-bottom: 5px solid greenyellow;
+min-height: 100vh;
+font-size: 1.5rem;
+line-height: 2rem;
+}
+main{
+max-width: 800px;
+margin: auto;
+padding: 1em;
+}
+h1,h2,h3{
+margin-bottom: .5em;
+margin-top: 1em;
+}
+code{
+    background-color: #1F1B24;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: block;
+}
