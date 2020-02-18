@@ -19,18 +19,40 @@
       }
     </code>
 
-    <h3>do...while statement</h3>
+    <h3>Function parameters</h3>
+    <h4>Default parameters</h4>
     <code>
-      do{<br>
-        /* statement */<br>
-    }<br>
-    while (condition);
+      function multiply(a, b) {<br>
+        b = typeof b !== 'undefined' ?  b : 1;<br>
+        return a * b;<br>
+      }<br>
+      multiply(5); // 5<br>
+    </code>
+    <code>
+      function multiply(a, b = 1) {<br>
+        return a * b;<br>
+      }<br>
+      multiply(5); // 5<br>
     </code>
 
-    <h3>while statement</h3>
+    <h4>Rest parameters</h4>
     <code>
-      while (condition){<br>
-        /* statement */<br>
+      function multiply(multiplier, ...theArgs) {<br>
+        return theArgs.map(x => multiplier * x);<br>
+      }<br>
+      var arr = multiply(2, 1, 2, 3);<br>
+      console.log(arr); // [2, 4, 6]<br>
+    </code>
+
+    <h3>Arrow functions</h3>
+    <code>
+      hello = function() {<br>
+        return "Hello World!";<br>
+      }<br>
+      <br>
+      <br>
+      hello = () => {<br>
+        return "Hello World!";<br>
       }
     </code>
 

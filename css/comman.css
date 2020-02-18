@@ -17,9 +17,14 @@ max-width: 800px;
 margin: auto;
 padding: 1em;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
 margin-bottom: .5em;
 margin-top: 1em;
+}
+a,
+a:hover,
+a:active{
+color: greenyellow;
 }
 code{
     background-color: #1F1B24;
@@ -27,4 +32,14 @@ code{
     border-radius: 5px;
     margin-top: 1em;
     display: block;
+}
+.grid-03{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+grid-gap:5px;
+}
+.grid-02{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap:5px;
 }
