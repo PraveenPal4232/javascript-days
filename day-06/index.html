@@ -12,27 +12,45 @@
     <main>
     <h1>Javascript Days: Day 06</h1>
     <h2>Numbers and dates</h2>
-    <h3>for statement</h3>
+    <h3>Decimal numbers</h3>
     <code>
-      for ([initialExpression]; [condition]; [incrementExpression]){<br>
-      /* statement */<br>
-      }
+      1234567890<br>
+      42<br><br>
+
+    // Caution when using leading zeros:<br><br>
+
+    0888 // 888 parsed as decimal<br>
+    0777 // parsed as octal in non-strict mode (511 in decimal)
     </code>
 
-    <h3>do...while statement</h3>
+    <h3>Binary numbers</h3>
     <code>
-      do{<br>
-        /* statement */<br>
-    }<br>
-    while (condition);
+      var FLT_SIGNBIT  = 0b10000000000000000000000000000000; // 2147483648<br>
+      var FLT_EXPONENT = 0b01111111100000000000000000000000; // 2139095040<br>
+      var FLT_MANTISSA = 0B00000000011111111111111111111111; // 8388607
     </code>
 
-    <h3>while statement</h3>
+    <h3>Octal numbers</h3>
     <code>
-      while (condition){<br>
-        /* statement */<br>
-      }
+      var n = 0755; // 493<br>
+      var m = 0644; // 420
     </code>
+
+    <h3>Hexadecimal numbers</h3>
+    <code>
+      0xFFFFFFFFFFFFFFFFF // 295147905179352830000<br>
+      0x123456789ABCDEF   // 81985529216486900<br>
+      0XA                 // 10
+    </code>
+
+    <h3>Exponentiation</h3>
+    <code>
+      1E3   // 1000<br>
+      2e6   // 2000000<br>
+      0.1e2 // 10
+    </code>
+
+    <h3>Number object, Math object and Date object are also important</h3>
 
     <script>
 
